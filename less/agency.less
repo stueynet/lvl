@@ -4,6 +4,11 @@
 // Global Components
 
 body {
+	background-image: url('../img/header_ocean.jpg');
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: top center;
+
 	overflow-x: hidden;
 	.body-font;
 }
@@ -168,11 +173,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 header {
+    /*
 	background-image: url('../img/header_ocean.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
-	background-position: center center;
+	background-position: top center;
 	.background-cover;
+    */
 	text-align: center;
 	color: white;
 	.intro-text {
@@ -217,6 +224,15 @@ header {
 		}
 	}
 }
+
+
+.large-logo{
+	max-width: 500px;
+	margin: 160px auto 0;
+	@media(min-width: 768px){
+	}
+}
+
 
 // Global Section Styles
 
@@ -588,7 +604,8 @@ section#contact {
 // Footer
 
 footer {
-	padding: 25px 0;
+	background: rgba(255,255,255,0.8);
+	padding: 50px 0;
 	text-align: center;
 	span.copyright {
 		line-height: 40px;
@@ -740,7 +757,7 @@ body {
 	font-size: 16px;
 	text-transform: uppercase;
 	img{
-		max-width: 100px;
+		max-width: 69px;
 	}
 	li{
 		display: inline-block;
